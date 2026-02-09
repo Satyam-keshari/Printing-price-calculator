@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rubber Printing</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- JS -->
+  <script src="../js/priceCalculator.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Rubber Printing</h1>
+    <p>Available rubber print sizes and placement options</p>
+
+    <!-- OPTIONS -->
+    <div class="options">
+      <div class="option-box" onclick="showSlab('rubber_front', this)">
+        <h3>Front Chest</h3>
+        <p>Size: 3 × 3 inches</p>
+      </div>
+
+      <div class="option-box" onclick="showSlab('rubber_back', this)">
+        <h3>Back Print</h3>
+        <p>Size: 8 × 10 inches</p>
+      </div>
+
+      <div class="option-box" onclick="showSlab('rubber_both', this)">
+        <h3>Front + Back</h3>
+        <p>
+          Front: 3 × 3 inches<br>
+          Back: 8 × 10 inches
+        </p>
+      </div>
+    </div>
+
+    <!-- PRICE SLABS -->
+    <div class="slab-section"></div>
+
+    <!-- CALCULATOR -->
+    <div class="calculator">
+      <h3>Calculate Price</h3>
+      <input type="number" id="qty" placeholder="Enter quantity">
+      <button onclick="calculatePrice()">Calculate</button>
+      <p id="result"></p>
+    </div>
+
+    <!-- BACK -->
+    <div class="menu">
+      <a href="index.html">← Back to Home</a>
+    </div>
+
+    <!-- BUSINESS NOTE -->
+    <div class="business-note">
+      Durable rubber prints with sharp edges, ideal for logos and bold designs.
+    </div>
+
+  </div>
+</body>
+</html>

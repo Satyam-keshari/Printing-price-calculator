@@ -1,0 +1,114 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #1f2933, #111827);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 900px;
+  max-width: 95%;
+  background: #ffffff;
+  padding: 32px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* HEADINGS */
+h1 {
+  text-align: center;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.container > p {
+  text-align: center;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 28px;
+}
+
+/* OPTIONS */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.option-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  border-left: 6px solid #0a66c2;
+  padding: 18px 22px;
+  border-radius: 8px;
+}
+
+.option-box h3 {
+  margin: 0;
+  color: #0a66c2;
+  font-size: 17px;
+}
+.option-box h3 a {
+  text-decoration: none;
+  color: #0a66c2;
+  display: block;
+}
+
+.option-box h3 a:hover {
+  color: #084a91;
+}
+/* HOVER EFFECT FOR OPTIONS */
+.option-box {
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.option-box:hover {
+  background: #0a66c2;
+}
+
+.option-box:hover h3,
+.option-box:hover p,
+.option-box:hover a {
+  color: #ffffff;
+}
+
+/* slight lift for premium feel */
+.option-box:hover {
+  transform: translateY(-2px);
+}
+a {
+  text-decoration: none;
+}
+
+
+.option-box p {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+  text-align: right;
+}
+
+/* MENU */
+.menu {
+  text-align: center;
+  margin-top: 26px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #0a66c2;
+}
+
+/* BUSINESS NOTE */
+.business-note {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}

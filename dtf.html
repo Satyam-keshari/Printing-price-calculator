@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DTF Printing</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>DTF Printing</h1>
+    <p>Available DTF print sizes and placement options</p>
+
+    <!-- OPTIONS -->
+    <div class="options">
+      <div class="option-box" onclick="showSlab('front', this)">
+        <h3>Front Chest</h3>
+        <p>Size: 3 × 3 inches</p>
+      </div>
+
+      <div class="option-box" onclick="showSlab('back', this)">
+        <h3>Back Print</h3>
+        <p>Size: 8 × 10 inches (A4)</p>
+      </div>
+
+      <div class="option-box" onclick="showSlab('frontA4', this)">
+        <h3>Front A4</h3>
+        <p>Size: 8 × 10 inches</p>
+      </div>
+
+      <div class="option-box" onclick="showSlab('both', this)">
+        <h3>Front + Back</h3>
+        <p>
+          Front: 3 × 3 inches<br>
+          Back: 8 × 10 inches
+        </p>
+      </div>
+    </div>
+
+    <!-- PRICE SLABS -->
+    <div class="slab-section"></div>
+
+    <!-- CALCULATOR -->
+    <div class="calculator">
+      <h3>Calculate Price</h3>
+      <input type="number" id="qty" placeholder="Enter quantity">
+      <button onclick="calculatePrice()">Calculate</button>
+      <p id="result"></p>
+    </div>
+
+    <!-- BACK -->
+    <div class="menu">
+      <a href="index.html">← Back to Home</a>
+    </div>
+
+    <!-- NOTE -->
+    <div class="business-note">
+      Lightweight, breathable prints with vibrant colors, perfect for long-lasting wear.
+    </div>
+
+  </div>
+
+  <!-- ✅ JS AT BOTTOM (VERY IMPORTANT) -->
+  <script src="../js/priceCalculator.js"></script>
+</body>
+</html>
